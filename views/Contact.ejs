@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/design.css">
+    <title>Contact-Sudip Ghimire</title>
 </head>
 <body>
-    <P>This is the Contact page</P>
+    <div class="whole">
+        <%-include('partial/Top')%>
+        <h2 class="top_h2">Complete the form below so I can respond your inquiries within 2 business days</h2>
+
+            <div class="form">
+                <form>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <div class="form-row">
+                            <label for="Fname">First Name:</label>
+                            <input type="text" id="Fname" name="Fname">
+                        </div>
+                        <div class="form-row">
+                            <label for="Lname">Last name:</label>
+                            <input type="text" id="Lname" name="Lname">
+                        </div>
+                        <div class="form-row">
+                            <label for="Number">Phone Number:</label>
+                            <input type="text" id="Number" name="Number">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email address:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-row">
+                            <textarea rows="6" cols="30" placeholder="Your Message... "></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="Form-low">
+                        <button id="Sub-Button">Submit</button>
+                        <input type="reset">
+                    </div>
+
+                    <script>
+                        var submit = document.getElementById('Sub-Button')
+                        submit.addEventListener("click",redirecthomepage)
+                        function redirecthomepage(){
+                            window.location.href='/home';
+                        }
+                    </script>
+                    
+                </form>
+                <h3>For other inquiries and questions</h3>
+                <P>Sghimi16@my.centennialcollege.ca</P>
+                <p>+1 (437)-799-8558</p>
+                <p>Centennial College</p>
+                <P>921 Progress Avenue, Toronto</P>
+            </div>
+            <%-include('partial/Foot')%>
+    </div>
     
 </body>
 </html>

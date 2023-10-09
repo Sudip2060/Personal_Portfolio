@@ -9,8 +9,10 @@
 <body>
     <div class="whole">
         <%-include('partial/Top')%>
+        <!--A short introduction message to the user-->
         <h2 class="top_h2">Complete the form below so I can respond your inquiries within 2 business days</h2>
 
+            <!--Creating a Contact form-->
             <div class="form">
                 <form>
                     <fieldset>
@@ -35,11 +37,14 @@
                             <textarea rows="6" cols="30" placeholder="Your Message... "></textarea>
                         </div>
                     </fieldset>
+
+                    <!--Creating a submit and reset button for the form-->
                     <div class="Form-low">
                         <button id="Sub-Button">Submit</button>
                         <input type="reset">
                     </div>
 
+                    <!--Javascript function to redirect the application to home page whenever the user clicks the submit button-->
                     <script>
                         var submit = document.getElementById('Sub-Button')
                         submit.addEventListener("click",redirecthomepage)
@@ -49,6 +54,7 @@
                     </script>
                     
                 </form>
+                <!--Providing other forms of contact details to the user-->
                 <h3>For other inquiries and questions</h3>
                 <P>Sghimi16@my.centennialcollege.ca</P>
                 <p>+1 (437)-799-8558</p>

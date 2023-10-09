@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/design.css">
+    <title>About me-Sudip Ghimire</title>
 </head>
 <body>
-    <P>THis is a demo about page</P>
+    <div class="whole">
+        <!-- Include a partial named 'Top' -->
+        <%-include('Partial/Top')%>
+
+       <!--Creating a separate Div for main photo-->
+        <div class="main_photo">
+            <img src="/Img/Sudip.jpg" style="width: auto; margin: auto; padding-top: 10px; padding-bottom: 0px;">
+            <p><span class="Photo_desc">Mr.Sudip Ghimire</span></p>
+        </div>
+
+        <!--The Main Description-->
+        <div class="about_desc">
+        <P>Sudip, a talented and sedulous individual, originates from the captivating nation of Nepal. His educational journey began at Tarun Secondary School, where he successfully completed his Secondary schooling education. Then he completed his high schooling from Trinity International Secondary School in Sceince Faculty. Currently, Sudip is pursuing his passion for technology by enrolling in the Software Engineering Technician program at Centennial College.</P>
+
+        <p>Sudip possesses a diverse skill set that includes proficiency in programming languages such as C#, Java, and JavaScript. His talents extend to web development, where he excels in HTML and CSS, allowing him to craft visually captivating and interactive web applications.</p>
+            
+        <p> A standout attribute in Sudip's skill arsenal is his expertise in React, a widely used JavaScript library for creating dynamic and responsive user interfaces. His deep understanding of JavaScript, the cornerstone of modern web applications, further enhances his capacity to develop engaging front-end components.</p>
+            
+        <p>Sudip's commitment to his studies, combined with his strong educational foundation, positions him as a promising talent in the field of software development. His ability to apply his knowledge to practical projects, coupled with his unwavering dedication to continuous learning, makes him a valuable asset to any team.</p>
+            
+        <p>As Sudip progresses through his Software Engineering Technician program at Centennial College and accumulates practical experience in the technology sector, his skills are certain to evolve, cementing his position as a proficient and dynamic contributor to the world of software development.</P>
+        </div>
+
+        <!-- Include a partial named 'Foot' -->
+        <%-include('partial/Foot')%>
+    </div>
 </body>
 </html>

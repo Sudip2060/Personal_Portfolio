@@ -97,7 +97,15 @@ legend{
     padding-top: 5px;
     padding-left: 5px;
 }
-
+.Photo_desc{
+    font-size: 1.2em;
+}
+.about_desc{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px ;
+}
+/*Making the application responsive in mobile and tablets */
 @media (min-width:600px)
 {
     header{

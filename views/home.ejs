@@ -11,9 +11,13 @@
     </head>
     <body>
     <div class="whole">
+
+        <!--Including a Partial named TOP-->
         <%-include('partial/Top')%>
         <img src="/Img/Banner.jpg" width="100%" height="400px">
-        <P class="intro"><span class="start">"Your mind is everthing, you become what you think"</span>- Buddha</P>               
+        <P class="intro"><span class="start">"Your mind is everthing, you become what you think"</span>- Buddha</P>  
+
+        <!--Welcome messages and other messages -->             
          <div class="main">
             <P>
                 Welcome to my digital space! Explore my world of creativity and innovation as I showcase my work and experiences. Feel free to browse around, and don't hesitate to get in touch. Let's connect and create together!
@@ -21,10 +25,13 @@
             <P>
                 Feel free to explore the work I've done. Whether you're here for inspiration, collaboration, or just to browse, I'm here to help. Don't hesitate to reach out. Let's embark on this exciting journey together!
             </P>
+
+            <!--Providing link for about me page from the main home page-->
             <p>
-                Click <a href="/Contact">here</a> to learn more about me.
+                Click <a href="/aboutme">here</a> to learn more about me.
             </p>
          </div>
+         <!-- Include a partial named 'Foot' -->
          <%-include('partial/Foot')%>
     </div>
     </body>

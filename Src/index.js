@@ -11,10 +11,15 @@ app.use(express.static('public'))
 
 //Defining routes for different pages of the web application
 app.get('/',(req,res)=> {res.render('home')});
-app.get('/home',(req,res)=> {res.render('home')});
-app.get('/Projects',(req,res)=>{res.render('Projects')});
-app.get('/aboutme',(req,res)=>{res.render('aboutme')})
-app.get('/contact',(req,res)=>{res.render('Contact')})
+app.get('/Home',(req,res)=> {res.render('home')});
+app.get('/Projects',(req,res)=>{res.render('projects')});
+app.get('/Aboutme',(req,res)=>{res.render('aboutme')});
+app.get('/Contact',(req,res)=>{res.render('contact')});
+app.get('/Services',(req,res)=>{res.render('services')});
+
+
+
+
 
 //Assigning Port number as 5000 for the express application to listen on
 const port = 5000;

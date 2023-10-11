@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/design.css">
+    <link rel="stylesheet" href="/other files/design.css">
     <title>Contact-Sudip Ghimire</title>
+    <script src="/other files/formsubmit.js" defer></script>
 </head>
 <body>
     <div class="whole">
-        <%-include('partial/Top')%>
+        <!-- Including the 'Top' partial, which typically contains a navigation header -->
+        <%-include('Partial/top')%>
         <!--A short introduction message to the user-->
-        <h2 class="top_h2">Complete the form below so I can respond your inquiries within 2 business days</h2>
+        <h2 class="top_h2">Complete the form below so I can respond your proposals within 2 business days</h2>
 
             <!--Creating a Contact form-->
             <div class="form">
@@ -44,15 +46,6 @@
                         <input type="reset">
                     </div>
 
-                    <!--Javascript function to redirect the application to home page whenever the user clicks the submit button-->
-                    <script>
-                        var submit = document.getElementById('Sub-Button')
-                        submit.addEventListener("click",redirecthomepage)
-                        function redirecthomepage(){
-                            window.location.href='/home';
-                        }
-                    </script>
-                    
                 </form>
                 <!--Providing other forms of contact details to the user-->
                 <h3>For other inquiries and questions</h3>
@@ -61,8 +54,10 @@
                 <p>Centennial College</p>
                 <P>921 Progress Avenue, Toronto</P>
             </div>
-            <%-include('partial/Foot')%>
+            <!-- Including the 'Foot' partial, which typically contains footer information -->
+            <%-include('Partial/foot')%>
     </div>
+    
     
 </body>
 </html>
